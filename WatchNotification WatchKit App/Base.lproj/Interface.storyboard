@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11508"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchNotification_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="27" alignment="left" id="ioK-O1-15G">
+                            <items>
+                                <label width="1" height="33" alignment="left" text="Label" textAlignment="center" id="b3E-KX-gjy"/>
+                            </items>
+                        </group>
+                        <group alignment="center" id="ijh-at-ci5">
+                            <items>
+                                <button width="1" alignment="left" title="Button" id="Pqs-Ys-lfv">
+                                    <fontDescription key="font" type="system" pointSize="13"/>
+                                    <connections>
+                                        <action selector="exampleButtonTapped" destination="AgC-eL-Hgc" id="2kq-Zd-wnr"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="exampleButton" destination="Pqs-Ys-lfv" id="N8o-DD-pKI"/>
+                        <outlet property="notificationLabel" destination="b3E-KX-gjy" id="dsE-HT-rsz"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>
